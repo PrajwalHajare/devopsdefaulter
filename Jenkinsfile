@@ -14,14 +14,14 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'javac Game.java'
-                bat 'javac Main.java'
+                sh 'javac Game.java'
+                sh 'javac Main.java'
             }
         }
 
         stage('Run') {
             steps {
-                bat 'java Main'
+                sh 'java Main'
             }
         }
     }
